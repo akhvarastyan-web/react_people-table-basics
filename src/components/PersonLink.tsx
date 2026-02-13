@@ -3,6 +3,7 @@ import { Person } from '../types/Person';
 
 interface Props {
   person: Person | null | undefined;
+  name: string;
 }
 
 export const PersonLink: React.FC<Props> = ({ person, name }) => {
@@ -23,5 +24,5 @@ export const PersonLink: React.FC<Props> = ({ person, name }) => {
     return <>{name}</>;
   }
 
-  return null;
+  return <>-</>;
 };

@@ -12,6 +12,7 @@ export const PeoplePage = () => {
 
   useEffect(() => {
     setLoading(true);
+    setErrorMessage('');
 
     getPeople()
       .then(data => {

@@ -2,8 +2,8 @@ import React from 'react';
 import { Routes, Route, NavLink, Navigate } from 'react-router-dom';
 import { HomePage } from './components/HomePage';
 import { PeoplePage } from './components/PeoplePage';
+import { NotFoundPage } from './components/NotFoundPage'
 import classNames from 'classnames';
-
 
 import './App.scss';
 
@@ -41,10 +41,7 @@ export const App = () => {
               <Route index element={<PeoplePage />} />
               <Route path=":slug" element={<PeoplePage />} />
             </Route>
-            <Route
-              path="*"
-              element={<h1 className="title">Page not found</h1>}
-            />
+            <Route path="*" element={<NotFoundPage />} />
           </Routes>
         </div>
       </main>
