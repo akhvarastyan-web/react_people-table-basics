@@ -7,7 +7,7 @@ import { PeopleTable } from './PeopleTable';
 
 export const PeoplePage = () => {
   const [people, setPeople] = useState<Person[]>([]);
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
   const [errorMessage, setErrorMessage] = useState('');
 
   useEffect(() => {
@@ -42,7 +42,7 @@ export const PeoplePage = () => {
 
           {!loading && errorMessage && (
             <p data-cy="peopleLoadingError" className="has-text-danger">
-              {ErrorMessage.LoadingError}
+              {errorMessage}
             </p>
           )}
 

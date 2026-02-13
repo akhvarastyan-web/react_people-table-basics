@@ -2,7 +2,7 @@ import React from 'react';
 import { Routes, Route, NavLink, Navigate } from 'react-router-dom';
 import { HomePage } from './components/HomePage';
 import { PeoplePage } from './components/PeoplePage';
-import { NotFoundPage } from './components/NotFoundPage'
+import { NotFoundPage } from './components/NotFoundPage';
 import classNames from 'classnames';
 
 import './App.scss';
